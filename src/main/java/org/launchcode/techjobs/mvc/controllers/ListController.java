@@ -56,7 +56,7 @@ public class ListController {
         } else {
             jobs = JobData.findByColumnAndValue(column, value);
             model.addAttribute("title", "Jobs with " + columnChoices.get(column) + ": " + value);
-        }
+            }
         model.addAttribute("jobs", jobs);
 
         return "list-jobs";
